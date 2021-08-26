@@ -1,3 +1,4 @@
+LUK3D.breackpoints = {"xs":0, "sm":"640px","md":"768px","lg":"1024px","xl":"1280px"};
 
 window.LUK3D = {};
 LUK3D.responsivize = function (command){
@@ -17,7 +18,7 @@ LUK3D.responsivize = function (command){
     return result.join("\n");
 }
 
-LUK3D.breackpoints = {"xs":0, "sm":"640px","md":"768px","lg":"1024px","xl":"1280px"};
+
 
 
 function run (){
