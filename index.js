@@ -1,11 +1,18 @@
+window.LUK3D = {};
+
 LUK3D.breackpoints = {"xs":0, "sm":"640px","md":"768px","lg":"1024px","xl":"1280px"};
 
-window.LUK3D = {};
 LUK3D.responsivize = function (command){
     var result = [];
+    var sections = command.split("}");
+   
+    sections.forEach((element,index) => {
+        result.push(element.split("#point-").join("") +"\n}");
+    });
+
     Object.entries(LUK3D.breackpoints).map(point=>{
 
-        var sections = command.split("}");
+      
         var line = `@media (min-width: ${point[1]}) {\n\n`;
 
         sections.forEach((element,index) => {
